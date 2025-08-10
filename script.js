@@ -23,7 +23,7 @@ const inspirationData = [
                     de: "Moderne Couch",
                     fr: "Canapé Moderne"
                 },
-                link: "https://www.amazon.nl/dp/B0D8146QWP/?coliid=I1BIAHPT7ZBMZ9&colid=3CLI1OZ4DKKQP&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
+                link: "https://amzn.to/4mv97GA"
             },
             {
                 name: {
@@ -32,7 +32,7 @@ const inspirationData = [
                     de: "Abstraktes Gemälde",
                     fr: "Peinture Abstraite"
                 },
-                link: "https://www.amazon.nl/dp/B0F4KDS3DF/?coliid=I2U063EXSSVHKL&colid=8QXCNJOMMETN&ref_=list_c_wl_lv_ov_lig_dp_it_im&th=1"
+                link: "https://amzn.to/4ma6n1F"
             },
             {
                 name: {
@@ -41,7 +41,7 @@ const inspirationData = [
                     de: "Couchtisch",
                     fr: "Table Basse"
                 },
-                link: "https://www.amazon.nl/dp/B0DT6RBKY7/?coliid=I3TE9JIWV0TYGZ&colid=16UL6N6XUY1I7&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
+                link: "https://amzn.to/4mbdPcY"
             },
             {
                 name: {
@@ -50,7 +50,7 @@ const inspirationData = [
                     de: "Kissenbezug",
                     fr: "Housse de Coussin"
                 },
-                link: "https://www.amazon.nl/dp/B0BPST9VV9/?coliid=IFEB4KD29TFUA&colid=3CLI1OZ4DKKQP&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
+                link: "https://amzn.to/3HoiyJ5"
             }
         ],
         tips: {
@@ -84,31 +84,31 @@ const inspirationData = [
         products: [
             {
                 name: "Kunstverlichting",
-                link: "https://www.amazon.nl/FULEN-beeldverlichting-kunstverlichting-kleurtemperaturen-afstandsbediening/dp/B0CQ53NKKH/ref=sr_1_5?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2QZH9UPLAXZHZ&dib=eyJ2IjoiMSJ9.-TDIWD7Xa4hHQXy1I-bWY0RrzZx3MKSDV5M_95SiATLmyXb_qfF_uh1TiT_DYBBttlYKNbYWokI_Za_fEX6-TaXyUKT6y2qG-oqlXlXuA0OIrVV3UcDmUA9-o4vJjQW2WnTeHH25Oz8spbaELZz4T1Db9xHvmecR8r3hbngiJh-9xNhD8VMXtOVznJT_7y17xPx03xc62UHEtiiUYhMi-BQnRtK4iaD-GRtyGlH12YP-jwSd_nFRfgwbBCz7wl3ritqEe_yWCR-NDLZRb8o6vcNQBXOWyLiJ-ZF9Q4zWU0A.F3sbFKV__G6h2OGj4W3_CYey7oP19fLdo95zzbWm7r0&dib_tag=se&keywords=art%2Blamp&qid=1754855923&sprefix=art%2Blamp%2Caps%2C109&sr=8-5&th=1"
+                link: "https://amzn.to/4lrouPx"
             },
             {
                 name: "Abstract Schilderij 1",
-                link: "https://www.europosters.nl/art-photo/colour-study-i-abstract-rainbow-karl-wiener-v124266"
+                link: "https://www.europosters.nl/art-photo/colour-study-i-abstract-rainbow-karl-wiener-v124266?affil=SOFIESINTERIORDESIGN10"
             },
             {
                 name: "Abstract Schilderij 2",
-                link: "https://www.europosters.nl/art-photo/colour-study-iii-abstract-rainbow-karl-wiener-v124269"
+                link: "https://www.europosters.nl/art-photo/colour-study-iii-abstract-rainbow-karl-wiener-v124269?affil=SOFIESINTERIORDESIGN10"
             },
             {
                 name: "Abstract Schilderij 3",
-                link: "https://www.europosters.nl/art-photo/colour-study-v-abstract-rainbow-karl-wiener-v124268"
+                link: "https://www.europosters.nl/art-photo/colour-study-v-abstract-rainbow-karl-wiener-v124268?affil=SOFIESINTERIORDESIGN10"
             },
             {
                 name: "Elegante Hoekbank",
-                link: "https://www.amazon.nl/Emporius-Aldo-Hoekbank-250-woonkamerbank/dp/B0F3P25XFD/ref=pd_ci_mcx_mh_mcx_views_0_image?pd_rd_w=NcUmq&content-id=amzn1.sym.fd7a8d90-7485-496b-931a-5cfb049be8f2%3Aamzn1.symc.30e3dbb4-8dd8-4bad-b7a1-a45bcdbc49b8&pf_rd_p=fd7a8d90-7485-496b-931a-5cfb049be8f2&pf_rd_r=H6XDXNNS2YVYW2T8CDBX&pd_rd_wg=tQPjn&pd_rd_r=bc120002-201c-417e-bb35-a72a4ea53dcd&pd_rd_i=B0F3P25XFD&th=1"
+                link: "https://amzn.to/4oqyrzr"
             },
             {
                 name: "Stijlvol Behang",
-                link: "https://www.amazon.nl/dp/B07TL91335/?coliid=I3R5VBFUQXJ8HO&colid=MKU6YRV67T7X&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
+                link: "https://amzn.to/459zvjw"
             },
             {
                 name: "Moderne Salontafel",
-                link: "https://www.amazon.nl/dp/B0CDLRPPG5/ref=sspa_dk_detail_1?pf_rd_p=2ecceb92-891b-4f6a-8f2e-861d1c3c6df9&pf_rd_r=9BNYZW18M68Z93VEFKX5&pd_rd_wg=nLf3Q&pd_rd_w=Fvirs&content-id=amzn1.sym.2ecceb92-891b-4f6a-8f2e-861d1c3c6df9&pd_rd_r=e6c0d8eb-1e07-4f41-950a-055faefe0c57&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1"
+                link: "https://amzn.to/3UUyfL6"
             }
         ],
         tips: [
@@ -125,7 +125,7 @@ const inspirationData = [
         products: [
             {
                 name: "Zafferano Transparante Glazen",
-                link: "https://www.amazon.nl/Zafferano-Transparant-handgemaakt-versierd-verschillende/dp/B089F3Y538"
+                link: "https://amzn.to/41me38P"
             }
         ],
         tips: [
@@ -142,19 +142,19 @@ const inspirationData = [
         products: [
             {
                 name: "Decoratieve Boeken",
-                link: "https://www.amazon.nl/Gwezmxs-Decoratieve-Decoratief-Nepboekdecoratie-Decoratie/dp/B0CYH7LLM5/ref=pd_ybh_a_d_sccl_16/260-1723398-0088731?pd_rd_w=r8x0t&content-id=amzn1.sym.850d226d-9be1-40ba-94eb-237e80191616&pf_rd_p=850d226d-9be1-40ba-94eb-237e80191616&pf_rd_r=K716ZE72BHKDB3DP19S0&pd_rd_wg=SpEvn&pd_rd_r=a54e0214-dfee-4649-b79a-9a9c34e61fef&pd_rd_i=B0CYH7LLM5&th=1"
+                link: "https://amzn.to/4oMro4n"
             },
             {
                 name: "Sieraden Schaaltje",
-                link: "https://www.amazon.nl/GZYYANG-Sleutelplank-sieradenschaal-sieradendienblad-kamerdecoratie/dp/B0DT1YR8G1/ref=pd_ybh_a_d_sccl_17/260-1723398-0088731?pd_rd_w=r8x0t&content-id=amzn1.sym.850d226d-9be1-40ba-94eb-237e80191616&pf_rd_p=850d226d-9be1-40ba-94eb-237e80191616&pf_rd_r=K716ZE72BHKDB3DP19S0&pd_rd_wg=SpEvn&pd_rd_r=a54e0214-dfee-4649-b79a-9a9c34e61fef&pd_rd_i=B0DT1YR8G1&psc=1"
+                link: "https://amzn.to/45IQxoS"
             },
             {
                 name: "Asymmetrische Spiegel",
-                link: "https://www.amazon.nl/asymmetrische-wandspiegel-onregelmatige-artistieke-slaapkamer/dp/B0CN6TCBDL/ref=pd_ybh_a_d_sccl_11/260-1723398-0088731?pd_rd_w=r8x0t&content-id=amzn1.sym.850d226d-9be1-40ba-94eb-237e80191616&pf_rd_p=850d226d-9be1-40ba-94eb-237e80191616&pf_rd_r=K716ZE72BHKDB3DP19S0&pd_rd_wg=SpEvn&pd_rd_r=a54e0214-dfee-4649-b79a-9a9c34e61fef&pd_rd_i=B0CN6TCBDL&th=1"
+                link: "https://amzn.to/4ou4AGh"
             },
             {
                 name: "Keramische Vaas Set",
-                link: "https://www.amazon.nl/TAVADA-Keramische-Vaas-Set-Van/dp/B0CJDSQNFW/ref=pd_ybh_a_d_sccl_13/260-1723398-0088731?pd_rd_w=r8x0t&content-id=amzn1.sym.850d226d-9be1-40ba-94eb-237e80191616&pf_rd_p=850d226d-9be1-40ba-94eb-237e80191616&pf_rd_r=K716ZE72BHKDB3DP19S0&pd_rd_wg=SpEvn&pd_rd_r=a54e0214-dfee-4649-b79a-9a9c34e61fef&pd_rd_i=B0CJDSQNFW&psc=1"
+                link: "https://amzn.to/4fAcbiu"
             }
         ],
         tips: [
@@ -171,15 +171,15 @@ const inspirationData = [
         products: [
             {
                 name: "Nachtmann Kristalglazen",
-                link: "https://www.amazon.nl/Nachtmann-longdrinkset-kristalglas-89208-transparant/dp/B007K0GJSA/ref=sr_1_32?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=HWLDR6KAGARO&dib=eyJ2IjoiMSJ9.Z8GZXbKR8OVM4BNswCarXeKg3mjr62Hkxn-QC58Kf9JSNB-Wc67y33exPZk2fXZJZTIS158JtdFtxL2wmPEFd2-t6oufr8tDYR50aaIT3PWpwN7-k-o7I8lJ-AhVrbdykcGxFYwF6kk1NNz6L9c7CutfLgBsNvj7dm7P9KMZ41ALiwvh8mu6HaQcYa6k1SWpzIX7rLC_14sBQKhc5caOApHXKagRZEZmA1xWQ3m4pIV74MG2eCdNugIvQSdypded6xl34X4lfrmdlxnEyZArVd74kABIV6UaS0AXBmYMHbI.AL_e7UsA3V_LwjRWc227toRCU76S70bVLwzHtkB7t7w&dib_tag=se&keywords=glazen&qid=1754858239&sprefix=glazen%2Caps%2C88&sr=8-32&th=1"
+                link: "https://amzn.to/45smDnE"
             },
             {
                 name: "Amefa Felicity Bestekset",
-                link: "https://www.amazon.nl/Amefa-Felicity-24-delige-bestekset-personen/dp/B08CVTGDP2/ref=sr_1_8?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=APBS3AEYBRRX&dib=eyJ2IjoiMSJ9.0pzxsnpktyX-P1b_d4FuKbxkCDCMIfzV8ciQhdR6j1a89x3yErcZyOnSfxsUgpjDnWR7e9cHaNIq0L1GhF2dn2DLPbTVPIKFgz2l23lwXyv7k1iCtNXZ6Syj2oP2ak7vPfwET5KF3STI3P7bM-Rn3fMsQnIUliSIDa60Pn-rZreHwr3oQtoWbkKZs74yqUz_StKooOgSXIfFPECCUviLoOWGk9aQCOGptA4BCM-G4fbX7bkr9sx7BL6czU8ox-i-p7vQ1z-yo-2mbe8LPCFnqM2xQurDC3WCS26JOf6uU9c.qRNClof6S4QpR1wrBbupsPESMYlDb0EDkrrjOAyeefs&dib_tag=se&keywords=Bestek&qid=1754858268&sprefix=bestek%2Caps%2C87&sr=8-8&th=1"
+                link: "https://amzn.to/46RheJc"
             },
             {
                 name: "Stijlvolle Borden Set",
-                link: "https://www.amazon.nl/dp/B09SM4VWQL/ref=sspa_dk_detail_6?pd_rd_i=B09SM4VWQL&pd_rd_w=11zCY&content-id=amzn1.sym.2ecceb92-891b-4f6a-8f2e-861d1c3c6df9&pf_rd_p=2ecceb92-891b-4f6a-8f2e-861d1c3c6df9&pf_rd_r=P4RRBTQESGS5SC0DF3WS&pd_rd_wg=3jmzo&pd_rd_r=fc36312f-8443-4487-8f8b-b8296ca76e46&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1"
+                link: "https://amzn.to/45tvJQQ"
             }
         ],
         tips: [
@@ -196,19 +196,19 @@ const inspirationData = [
         products: [
             {
                 name: "Little Book of Hermès",
-                link: "https://www.amazon.nl/Little-Book-Herm%C3%A8s-Iconic-Fashion/dp/180279011X/ref=sr_1_30?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GZEMNT1WO49A&dib=eyJ2IjoiMSJ9._mvvUWTG76ApjWirQh23nEyEJniyiyTKvj7zcujo__Uux-EF26laLfD0mA0yaruaDQcEZGo6IHytBSlv4AT_l2f1BnJuTD2VxCDV9tH6_bWwwoup9zV67QzgUJWtKWwWhzl-6-OleNxLD4A_aqnqaKFw5Ut0YFzGu2-bRTfiaOtouUMcmx11Ep898vOn-bVgBwHvolQfCgXioE4NjQ-aeSpXZfmzIdvdgb5siREy6v2t17n6IQfqiPKHV1XitnbPLG84Z3ns9lHlvnO-9lx1zeKx5m_IKP1Hc5yppPQWbrg.xLYgXpxdisI33HyaWHMhjID_y3r5Ce3h2OfXMPE9WQo&dib_tag=se&keywords=decor+books&qid=1754861468&sprefix=decor+books%2Caps%2C89&sr=8-30"
+                link: "https://amzn.to/45Jmttd"
             },
             {
                 name: "ARJDXDP Sieradenschaal",
-                link: "https://www.amazon.nl/ARJDXDP-Sieradenschaal-Sieradenschotel-Snuisterijschaal-verjaardagen/dp/B0CYQCMDNX?ref_=pd_ci_mcx_mh_pe_im_d1_hxwPPE_sspa_dk_det_cao_p_1_0&pd_rd_i=B0CYQCMDNX&pd_rd_w=oh0Cj&content-id=amzn1.sym.1e54d9fe-7e63-47cd-b262-fa3343218c39&pf_rd_p=1e54d9fe-7e63-47cd-b262-fa3343218c39&pf_rd_r=VDK5BNX5GJJTTK4JK397&pd_rd_wg=R69jv&pd_rd_r=09bb5357-1883-415c-88b6-efd87b27cce7&th=1"
+                link: "https://amzn.to/4oqyL17"
             },
             {
                 name: "Keramische Kleine Bloemenvazen",
-                link: "https://www.amazon.nl/Keramische-kleine-bloemenvazen-decoratie-oranje/dp/B0DJGCQSZF/ref=pd_ybh_a_d_sccl_3/260-1723398-0088731?pd_rd_w=bj2kL&content-id=amzn1.sym.850d226d-9be1-40ba-94eb-237e80191616&pf_rd_p=850d226d-9be1-40ba-94eb-237e80191616&pf_rd_r=736FR7R8D8CWAS2D4N10&pd_rd_wg=ARMIl&pd_rd_r=8ef735f3-6206-44f0-a3a6-2dd7c52230f8&pd_rd_i=B0DJGCQSZF&th=1"
+                link: "https://amzn.to/4ouSbBO"
             },
             {
                 name: "Abstract Art Seize the Day",
-                link: "https://www.europosters.nl/marketplace/abstract-art-seize-the-day-v156011"
+                link: "https://www.europosters.nl/marketplace/abstract-art-seize-the-day-v156011?affil=SOFIESINTERIORDESIGN10"
             }
         ],
         tips: [
