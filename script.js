@@ -1,36 +1,42 @@
-// Inspiration Data - Sofie's Interior Design
+// Inspiration data
 const inspirationData = [
     {
         id: "MW-101",
         title: "Luxe Woonkamer met Spiegeldecor",
-        description: "Stijlvolle woonkamer met elegante spiegeldecoratie en moderne inrichting",
-        category: "interior",
+        description: "Een elegante woonkamer met een prachtige spiegel als centraal decoratie-element. Deze spiegel creëert niet alleen meer ruimte, maar voegt ook een luxueuze uitstraling toe aan de ruimte.",
         image: "images/20250802_1815_Luxe Woonkamer Spiegeldecor_remix_01k1nryj44f02vwsztya666hda (1).png",
         products: [
             {
-                name: "Lijstloze wandspiegel Lia in organische vorm",
+                name: "Luxe Spiegel met Gouden Rand",
                 price: "€249",
-                shop: "Westwing",
-                link: "https://www.westwing.nl/lijstloze-wandspiegel-lia-in-organische-vorm-149603.html"
+                store: "Westwing",
+                link: "https://www.westwing.nl/ronde-spiegel-met-gouden-rand-159047.html"
             }
         ],
-        tips: "Voor een luxe woonkamer, combineer grote spiegels met warme verlichting. Kies voor hoogwaardige materialen zoals leder en marmer. Zorg voor een goede balans tussen functionaliteit en stijl."
+        tips: [
+            "Plaats de spiegel tegenover een raam voor maximale lichtreflectie",
+            "Combineer met warme verlichting voor een gezellige sfeer",
+            "Gebruik de spiegel om de ruimte visueel te vergroten"
+        ]
     },
     {
         id: "MW-102",
         title: "Stijlvolle Woonkamer met Kunstwerk",
-        description: "Moderne woonkamer met handbeschilderd canvas kunstwerk en elegante inrichting",
-        category: "interior",
+        description: "Een moderne woonkamer met een indrukwekkend handbeschilderd canvas kunstwerk. Dit abstracte schilderij vormt het perfecte middelpunt van de ruimte en voegt kleur en karakter toe.",
         image: "images/20250804_1338_Stijlvolle Woonkamerreclame_remix_01k1tdx1rsfgea7qqy9s5szysd.png",
         products: [
             {
                 name: "Handbeschilderde canvas Abstract Seven",
                 price: "€289",
-                shop: "Westwing",
+                store: "Westwing",
                 link: "https://www.westwing.nl/handbeschilderde-canvas-abstract-seven-159047.html"
             }
         ],
-        tips: "Voor een stijlvolle woonkamer, kies voor handbeschilderde kunstwerken die de ruimte karakter geven. Combineer abstracte kunst met neutrale meubels voor een moderne uitstraling."
+        tips: [
+            "Hang het schilderij op ooghoogte voor optimale impact",
+            "Zorg voor goede verlichting om de kleuren tot leven te brengen",
+            "Laat voldoende ruimte rond het kunstwerk voor een gebalanceerde look"
+        ]
     }
 ];
 
@@ -78,7 +84,8 @@ function createInspirationItem(item) {
     
     // Add product type for hover label
     const productType = item.products[0]?.name.toLowerCase().includes('spiegel') ? 'mirror' : 
-                       item.products[0]?.name.toLowerCase().includes('canvas') ? 'painting' : 'product';
+                       item.products[0]?.name.toLowerCase().includes('canvas') ? 'painting' : 
+                       item.products[0]?.name.toLowerCase().includes('kunstgalerij') ? 'art collection' : 'product';
     div.setAttribute('data-product-type', productType);
     
     div.innerHTML = `
@@ -134,7 +141,7 @@ function openProductPage(item) {
                                         <div>
                                             <span style="color: #cccccc; margin-right: 1rem;">${product.price}</span>
                                             <a href="${product.link}" target="_blank" class="buy-btn">
-                                                Kopen bij ${product.shop}
+                                                Kopen bij ${product.store}
                                             </a>
                                         </div>
                                     </li>
@@ -144,7 +151,7 @@ function openProductPage(item) {
                         
                         <div class="product-tips">
                             <h3>💡 Styling Tips van Sofie</h3>
-                            <p>${item.tips}</p>
+                            <p>${item.tips.join(' ')}</p>
                         </div>
                     </div>
                 </div>
@@ -257,4 +264,4 @@ window.addEventListener('load', function() {
             openProductPage(foundItem);
         }
     }
-}); 
+});
