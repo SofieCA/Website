@@ -6,10 +6,11 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: #f8f6f2;
     color: #2c2c2c;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 .container {
@@ -19,9 +20,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
     font-weight: 500;
     color: #2c2c2c;
+    letter-spacing: 0.02em;
 }
 
 /* Navigation */
@@ -50,6 +52,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
     color: #8b7355;
     font-weight: 600;
+    letter-spacing: 0.02em;
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
 }
 
 .nav-menu {
@@ -61,8 +65,11 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
     text-decoration: none;
     color: #5d4e37;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s ease;
+    letter-spacing: 0.05em;
+    font-family: 'Roboto Condensed', 'Arial Black', sans-serif;
+    text-transform: uppercase;
 }
 
 .nav-link:hover {
@@ -77,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(44, 44, 44, 0.4), rgba(44, 44, 44, 0.4)), 
-                url('images/20250810_2348_Luxe Galerie Interieur_remix_01k2az6r0wfat9hcqwqh2v0wr0.png');
+                url('images/20250811_0034_Luxe Bergzicht Villa_remix_01k2b1t448erpr7gkcpaddj36c.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -87,38 +94,55 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-content {
     max-width: 800px;
-    padding: 2rem;
-    background: rgba(248, 246, 242, 0.9);
-    border-radius: 12px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 8px 32px rgba(139, 115, 85, 0.1);
+    padding: 2.5rem;
+    background: transparent;
+    border-radius: 0;
+    backdrop-filter: none;
+    box-shadow: none;
+    border: none;
 }
 
 .hero-title {
     font-size: 2.5rem;
     color: #2c2c2c;
     margin-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .hero-subtitle {
-    font-size: 1rem;
-    color: #5d4e37;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-family: 'Roboto Condensed', 'Arial Black', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
 }
 
 .cta-button {
     display: inline-block;
     background: linear-gradient(135deg, #8b7355, #a08b6b);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1.25rem 2.5rem;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
+    border-radius: 0;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', 'Arial Black', sans-serif;
+    letter-spacing: 0.1em;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(139, 115, 85, 0.3);
+    box-shadow: 0 6px 20px rgba(139, 115, 85, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: uppercase;
 }
 
 .cta-button:hover {
