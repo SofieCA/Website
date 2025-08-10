@@ -2,40 +2,31 @@
 const inspirationData = [
     {
         id: "MW-101",
-        title: "Luxe Woonkamer met Spiegeldecor",
-        description: "Een elegante woonkamer met een prachtige spiegel als centraal decoratie-element. Deze spiegel creëert niet alleen meer ruimte, maar voegt ook een luxueuze uitstraling toe aan de ruimte.",
-        image: "images/20250802_1815_Luxe Woonkamer Spiegeldecor_remix_01k1nryj44f02vwsztya666hda (1).png",
+        title: "Modern Interieur Ontwerp",
+        image: "images/20250810_2006_Modern Interieur Ontwerp_remix_01k2ajejtbernv7bqnat5r6xn8.png",
+        description: "Een stijlvolle moderne woonkamer met zorgvuldig gekozen meubels en accessoires.",
         products: [
             {
-                name: "Luxe Spiegel met Gouden Rand",
-                price: "€249",
-                store: "Westwing",
-                link: "https://www.westwing.nl/ronde-spiegel-met-gouden-rand-159047.html"
+                name: "Moderne Bank",
+                link: "https://www.amazon.nl/dp/B0D8146QWP/?coliid=I1BIAHPT7ZBMZ9&colid=3CLI1OZ4DKKQP&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
+            },
+            {
+                name: "Abstract Schilderij",
+                link: "https://www.amazon.nl/dp/B0F4KDS3DF/?coliid=I2U063EXSSVHKL&colid=8QXCNJOMMETN&ref_=list_c_wl_lv_ov_lig_dp_it_im&th=1"
+            },
+            {
+                name: "Salontafel",
+                link: "https://www.amazon.nl/dp/B0DT6RBKY7/?coliid=I3TE9JIWV0TYGZ&colid=16UL6N6XUY1I7&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
+            },
+            {
+                name: "Kussensloop",
+                link: "https://www.amazon.nl/dp/B0BPST9VV9/?coliid=IFEB4KD29TFUA&colid=3CLI1OZ4DKKQP&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
             }
         ],
         tips: [
-            "Plaats de spiegel tegenover een raam voor maximale lichtreflectie",
-            "Combineer met warme verlichting voor een gezellige sfeer",
-            "Gebruik de spiegel om de ruimte visueel te vergroten"
-        ]
-    },
-    {
-        id: "MW-102",
-        title: "Stijlvolle Woonkamer met Kunstwerk",
-        description: "Een moderne woonkamer met een indrukwekkend handbeschilderd canvas kunstwerk. Dit abstracte schilderij vormt het perfecte middelpunt van de ruimte en voegt kleur en karakter toe.",
-        image: "images/20250804_1338_Stijlvolle Woonkamerreclame_remix_01k1tdx1rsfgea7qqy9s5szysd.png",
-        products: [
-            {
-                name: "Handbeschilderde canvas Abstract Seven",
-                price: "€289",
-                store: "Westwing",
-                link: "https://www.westwing.nl/handbeschilderde-canvas-abstract-seven-159047.html"
-            }
-        ],
-        tips: [
-            "Hang het schilderij op ooghoogte voor optimale impact",
-            "Zorg voor goede verlichting om de kleuren tot leven te brengen",
-            "Laat voldoende ruimte rond het kunstwerk voor een gebalanceerde look"
+            "Combineer verschillende texturen voor een warme uitstraling",
+            "Gebruik een mix van moderne en klassieke elementen",
+            "Zorg voor voldoende verlichting om de ruimte te laten ademen"
         ]
     }
 ];
@@ -82,11 +73,15 @@ function createInspirationItem(item) {
     div.className = 'inspiration-item';
     div.setAttribute('data-id', item.id);
     
-    // Add product type for hover label
-    const productType = item.products[0]?.name.toLowerCase().includes('spiegel') ? 'mirror' : 
-                       item.products[0]?.name.toLowerCase().includes('canvas') ? 'painting' : 
-                       item.products[0]?.name.toLowerCase().includes('kunstgalerij') ? 'art collection' : 'product';
-    div.setAttribute('data-product-type', productType);
+    // Add product type for hover label - show all product types
+    const productTypes = item.products.map(product => {
+        if (product.name.toLowerCase().includes('bank')) return 'sofa';
+        if (product.name.toLowerCase().includes('schilderij')) return 'painting';
+        if (product.name.toLowerCase().includes('salontafel')) return 'table';
+        if (product.name.toLowerCase().includes('kussensloop')) return 'cushion';
+        return 'product';
+    });
+    div.setAttribute('data-product-type', productTypes.join(', '));
     
     div.innerHTML = `
         <img src="${item.image}" alt="${item.title}" class="inspiration-image">
@@ -139,9 +134,8 @@ function openProductPage(item) {
                                     <li class="product-item">
                                         <span class="product-name">${product.name}</span>
                                         <div>
-                                            <span style="color: #cccccc; margin-right: 1rem;">${product.price}</span>
                                             <a href="${product.link}" target="_blank" class="buy-btn">
-                                                Kopen bij ${product.store}
+                                                Bekijk op Amazon
                                             </a>
                                         </div>
                                     </li>
