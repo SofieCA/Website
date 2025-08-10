@@ -1,33 +1,80 @@
-// Inspiration data
+// Inspiration data with translations
 const inspirationData = [
     {
         id: "MW-101",
-        title: "Modern Interieur Ontwerp",
+        title: {
+            en: "Modern Interior Design",
+            nl: "Modern Interieur Ontwerp",
+            de: "Modernes Innenarchitektur Design",
+            fr: "Design d'Intérieur Moderne"
+        },
         image: "images/20250810_2006_Modern Interieur Ontwerp_remix_01k2ajejtbernv7bqnat5r6xn8.png",
-        description: "Een stijlvolle moderne woonkamer met zorgvuldig gekozen meubels en accessoires.",
+        description: {
+            en: "A stylish modern living room with carefully chosen furniture and accessories.",
+            nl: "Een stijlvolle moderne woonkamer met zorgvuldig gekozen meubels en accessoires.",
+            de: "Ein stilvolles modernes Wohnzimmer mit sorgfältig ausgewählten Möbeln und Accessoires.",
+            fr: "Un salon moderne élégant avec des meubles et accessoires soigneusement choisis."
+        },
         products: [
             {
-                name: "Moderne Bank",
+                name: {
+                    en: "Modern Sofa",
+                    nl: "Moderne Bank",
+                    de: "Moderne Couch",
+                    fr: "Canapé Moderne"
+                },
                 link: "https://www.amazon.nl/dp/B0D8146QWP/?coliid=I1BIAHPT7ZBMZ9&colid=3CLI1OZ4DKKQP&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
             },
             {
-                name: "Abstract Schilderij",
+                name: {
+                    en: "Abstract Painting",
+                    nl: "Abstract Schilderij",
+                    de: "Abstraktes Gemälde",
+                    fr: "Peinture Abstraite"
+                },
                 link: "https://www.amazon.nl/dp/B0F4KDS3DF/?coliid=I2U063EXSSVHKL&colid=8QXCNJOMMETN&ref_=list_c_wl_lv_ov_lig_dp_it_im&th=1"
             },
             {
-                name: "Salontafel",
+                name: {
+                    en: "Coffee Table",
+                    nl: "Salontafel",
+                    de: "Couchtisch",
+                    fr: "Table Basse"
+                },
                 link: "https://www.amazon.nl/dp/B0DT6RBKY7/?coliid=I3TE9JIWV0TYGZ&colid=16UL6N6XUY1I7&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
             },
             {
-                name: "Kussensloop",
+                name: {
+                    en: "Cushion Cover",
+                    nl: "Kussensloop",
+                    de: "Kissenbezug",
+                    fr: "Housse de Coussin"
+                },
                 link: "https://www.amazon.nl/dp/B0BPST9VV9/?coliid=IFEB4KD29TFUA&colid=3CLI1OZ4DKKQP&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
             }
         ],
-        tips: [
-            "Combineer verschillende texturen voor een warme uitstraling",
-            "Gebruik een mix van moderne en klassieke elementen",
-            "Zorg voor voldoende verlichting om de ruimte te laten ademen"
-        ]
+        tips: {
+            en: [
+                "Combine different textures for a warm appearance",
+                "Use a mix of modern and classic elements",
+                "Ensure sufficient lighting to let the space breathe"
+            ],
+            nl: [
+                "Combineer verschillende texturen voor een warme uitstraling",
+                "Gebruik een mix van moderne en klassieke elementen",
+                "Zorg voor voldoende verlichting om de ruimte te laten ademen"
+            ],
+            de: [
+                "Kombinieren Sie verschiedene Texturen für ein warmes Aussehen",
+                "Verwenden Sie eine Mischung aus modernen und klassischen Elementen",
+                "Stellen Sie ausreichende Beleuchtung sicher, damit der Raum atmen kann"
+            ],
+            fr: [
+                "Combinez différentes textures pour une apparence chaleureuse",
+                "Utilisez un mélange d'éléments modernes et classiques",
+                "Assurez-vous d'un éclairage suffisant pour laisser l'espace respirer"
+            ]
+        }
     },
     {
         id: "MW-102",
@@ -216,25 +263,99 @@ function createInspirationItem(item) {
     
     // Add product type for hover label - show all product types
     const productTypes = item.products.map(product => {
-        if (product.name.toLowerCase().includes('bank') || product.name.toLowerCase().includes('hoekbank')) return 'sofa';
-        if (product.name.toLowerCase().includes('schilderij') || product.name.toLowerCase().includes('abstract art')) return 'painting';
-        if (product.name.toLowerCase().includes('salontafel')) return 'table';
-        if (product.name.toLowerCase().includes('kussensloop')) return 'cushion';
-        if (product.name.toLowerCase().includes('verlichting') || product.name.toLowerCase().includes('kunstverlichting')) return 'lighting';
-        if (product.name.toLowerCase().includes('behang')) return 'wallpaper';
-        if (product.name.toLowerCase().includes('glazen') || product.name.toLowerCase().includes('zafferano') || product.name.toLowerCase().includes('kristalglas')) return 'glassware';
-        if (product.name.toLowerCase().includes('boeken') || product.name.toLowerCase().includes('decoratieve') || product.name.toLowerCase().includes('hermès')) return 'books';
-        if (product.name.toLowerCase().includes('schaaltje') || product.name.toLowerCase().includes('sieradenschaal') || product.name.toLowerCase().includes('arjdxdp')) return 'tray';
-        if (product.name.toLowerCase().includes('spiegel') || product.name.toLowerCase().includes('asymmetrische')) return 'mirror';
-        if (product.name.toLowerCase().includes('vaas') || product.name.toLowerCase().includes('keramische') || product.name.toLowerCase().includes('bloemenvazen')) return 'vase';
-        if (product.name.toLowerCase().includes('bestek') || product.name.toLowerCase().includes('felicity')) return 'cutlery';
-        if (product.name.toLowerCase().includes('borden') || product.name.toLowerCase().includes('stijlvolle')) return 'plates';
-        return 'product';
+        const productName = typeof product.name === 'object' ? product.name[currentLanguage] : product.name;
+        const nameLower = productName.toLowerCase();
+        
+        // Define hover label translations
+        const hoverLabels = {
+            en: {
+                sofa: 'SOFA',
+                painting: 'PAINTING',
+                table: 'TABLE',
+                cushion: 'CUSHION',
+                lighting: 'LIGHTING',
+                wallpaper: 'WALLPAPER',
+                glassware: 'GLASSWARE',
+                books: 'BOOKS',
+                tray: 'TRAY',
+                mirror: 'MIRROR',
+                vase: 'VASE',
+                cutlery: 'CUTLERY',
+                plates: 'PLATES',
+                product: 'PRODUCT'
+            },
+            nl: {
+                sofa: 'BANK',
+                painting: 'SCHILDERIJ',
+                table: 'TAFEL',
+                cushion: 'KUSSEN',
+                lighting: 'VERLICHTING',
+                wallpaper: 'BEHANG',
+                glassware: 'GLAZEN',
+                books: 'BOEKEN',
+                tray: 'SCHAALTJE',
+                mirror: 'SPIEGEL',
+                vase: 'VAAS',
+                cutlery: 'BESTEK',
+                plates: 'BORDEN',
+                product: 'PRODUCT'
+            },
+            de: {
+                sofa: 'COUCH',
+                painting: 'GEMÄLDE',
+                table: 'TISCH',
+                cushion: 'KISSEN',
+                lighting: 'BELEUCHTUNG',
+                wallpaper: 'TAPETE',
+                glassware: 'GLÄSER',
+                books: 'BÜCHER',
+                tray: 'SCHALE',
+                mirror: 'SPIEGEL',
+                vase: 'VASE',
+                cutlery: 'BESTECK',
+                plates: 'TELLER',
+                product: 'PRODUKT'
+            },
+            fr: {
+                sofa: 'CANAPÉ',
+                painting: 'PEINTURE',
+                table: 'TABLE',
+                cushion: 'COUSSIN',
+                lighting: 'ÉCLAIRAGE',
+                wallpaper: 'PAPIER PEINT',
+                glassware: 'VERRERIE',
+                books: 'LIVRES',
+                tray: 'PLATEAU',
+                mirror: 'MIROIR',
+                vase: 'VASE',
+                cutlery: 'COUTELLERIE',
+                plates: 'ASSIETTES',
+                product: 'PRODUIT'
+            }
+        };
+        
+        let productType = 'product';
+        if (nameLower.includes('bank') || nameLower.includes('hoekbank') || nameLower.includes('sofa') || nameLower.includes('couch') || nameLower.includes('canapé')) productType = 'sofa';
+        else if (nameLower.includes('schilderij') || nameLower.includes('painting') || nameLower.includes('gemälde') || nameLower.includes('peinture')) productType = 'painting';
+        else if (nameLower.includes('salontafel') || nameLower.includes('coffee table') || nameLower.includes('couchtisch') || nameLower.includes('table basse')) productType = 'table';
+        else if (nameLower.includes('kussensloop') || nameLower.includes('cushion') || nameLower.includes('kissenbezug') || nameLower.includes('housse')) productType = 'cushion';
+        else if (nameLower.includes('verlichting') || nameLower.includes('kunstverlichting') || nameLower.includes('lighting') || nameLower.includes('lamp')) productType = 'lighting';
+        else if (nameLower.includes('behang') || nameLower.includes('wallpaper')) productType = 'wallpaper';
+        else if (nameLower.includes('glazen') || nameLower.includes('zafferano') || nameLower.includes('kristalglas') || nameLower.includes('glassware')) productType = 'glassware';
+        else if (nameLower.includes('boeken') || nameLower.includes('decoratieve') || nameLower.includes('hermès') || nameLower.includes('books')) productType = 'books';
+        else if (nameLower.includes('schaaltje') || nameLower.includes('sieradenschaal') || nameLower.includes('arjdxdp') || nameLower.includes('tray')) productType = 'tray';
+        else if (nameLower.includes('spiegel') || nameLower.includes('asymmetrische') || nameLower.includes('mirror')) productType = 'mirror';
+        else if (nameLower.includes('vaas') || nameLower.includes('keramische') || nameLower.includes('bloemenvazen') || nameLower.includes('vase')) productType = 'vase';
+        else if (nameLower.includes('bestek') || nameLower.includes('felicity') || nameLower.includes('cutlery')) productType = 'cutlery';
+        else if (nameLower.includes('borden') || nameLower.includes('stijlvolle') || nameLower.includes('plates')) productType = 'plates';
+        
+        return hoverLabels[currentLanguage] ? hoverLabels[currentLanguage][productType] : hoverLabels.en[productType];
     });
     div.setAttribute('data-product-type', productTypes.join(', '));
     
+    const title = typeof item.title === 'object' ? item.title[currentLanguage] : item.title;
     div.innerHTML = `
-        <img src="${item.image}" alt="${item.title}" class="inspiration-image">
+        <img src="${item.image}" alt="${title}" class="inspiration-image">
     `;
     
     div.addEventListener('click', () => openProductPage(item));
@@ -262,40 +383,66 @@ function setupEventListeners() {
 function openProductPage(item) {
     isOnProductPage = true;
     
+    // Get translated content
+    const title = typeof item.title === 'object' ? item.title[currentLanguage] : item.title;
+    const description = typeof item.description === 'object' ? item.description[currentLanguage] : item.description;
+    const tips = typeof item.tips === 'object' ? item.tips[currentLanguage] : item.tips;
+    
     // Create new page content
     const productPageHTML = `
         <div class="product-page">
             <div class="product-container">
                 <button class="back-btn" onclick="goBack()">
                     <i class="fas fa-arrow-left"></i>
-                    Terug naar Inspiratie
+                    ${currentLanguage === 'en' ? 'Back to Inspiration' : 
+                      currentLanguage === 'nl' ? 'Terug naar Inspiratie' :
+                      currentLanguage === 'de' ? 'Zurück zur Inspiration' :
+                      'Retour à l\'Inspiration'}
                 </button>
                 
                 <div class="product-header">
-                    <img src="${item.image}" alt="${item.title}" class="product-image">
+                    <img src="${item.image}" alt="${title}" class="product-image">
                     <div class="product-info">
-                        <h1>${item.title}</h1>
-                        <p class="product-description">${item.description}</p>
+                        <h1>${title}</h1>
+                        <p class="product-description">${description}</p>
                         
                         <div class="product-details">
-                            <h3>Beschikbare Producten</h3>
+                            <h3>${currentLanguage === 'en' ? 'Available Products' : 
+                                 currentLanguage === 'nl' ? 'Beschikbare Producten' :
+                                 currentLanguage === 'de' ? 'Verfügbare Produkte' :
+                                 'Produits Disponibles'}</h3>
                             <ul class="product-list">
-                                ${item.products.map(product => `
-                                    <li class="product-item">
-                                        <span class="product-name">${product.name}</span>
-                                        <div>
-                                            <a href="${product.link}" target="_blank" class="buy-btn">
-                                                Bekijk op Amazon
-                                            </a>
-                                        </div>
-                                    </li>
-                                `).join('')}
+                                ${item.products.map(product => {
+                                    const productName = typeof product.name === 'object' ? product.name[currentLanguage] : product.name;
+                                    const isEuroposters = product.link.includes('europosters');
+                                    return `
+                                        <li class="product-item">
+                                            <span class="product-name">${productName}</span>
+                                            <div>
+                                                <a href="${product.link}" target="_blank" class="buy-btn">
+                                                    ${isEuroposters ? 
+                                                        (currentLanguage === 'en' ? 'View on Europosters' : 
+                                                         currentLanguage === 'nl' ? 'Bekijk op Europosters' :
+                                                         currentLanguage === 'de' ? 'Auf Europosters ansehen' :
+                                                         'Voir sur Europosters') :
+                                                        (currentLanguage === 'en' ? 'View on Amazon' : 
+                                                         currentLanguage === 'nl' ? 'Bekijk op Amazon' :
+                                                         currentLanguage === 'de' ? 'Auf Amazon ansehen' :
+                                                         'Voir sur Amazon')}
+                                                </a>
+                                            </div>
+                                        </li>
+                                    `;
+                                }).join('')}
                             </ul>
                         </div>
                         
                         <div class="product-tips">
-                            <h3>💡 Styling Tips van Sofie</h3>
-                            <p>${item.tips.join(' ')}</p>
+                            <h3>💡 ${currentLanguage === 'en' ? 'Styling Tips from Sofie' : 
+                                     currentLanguage === 'nl' ? 'Styling Tips van Sofie' :
+                                     currentLanguage === 'de' ? 'Styling-Tipps von Sofie' :
+                                     'Conseils de Style de Sofie'}</h3>
+                            <p>${Array.isArray(tips) ? tips.join(' ') : tips}</p>
                         </div>
                     </div>
                 </div>
@@ -314,14 +461,20 @@ function openProductPage(item) {
 function goBack() {
     isOnProductPage = false;
     
+    // Save current language before reloading
+    const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+    
     // Reload the page to ensure we get back to the original state
     window.location.href = window.location.pathname;
+    
+    // The language will be restored by the load event listener
 }
 
 // Handle browser back button
 window.addEventListener('popstate', function(event) {
     if (!event.state || !event.state.product) {
         // User clicked browser back button, reload to get back to home
+        // The language will be restored by the load event listener
         window.location.reload();
     }
 });
@@ -399,6 +552,12 @@ function handleSwipe() {
 
 // Check for URL parameters on page load
 window.addEventListener('load', function() {
+    // Restore selected language
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    if (savedLanguage && savedLanguage !== 'en') {
+        changeLanguage(savedLanguage);
+    }
+    
     const urlParams = new URLSearchParams(window.location.search);
     const productParam = urlParams.get('product');
     
@@ -407,5 +566,109 @@ window.addEventListener('load', function() {
         if (foundItem) {
             openProductPage(foundItem);
         }
+    }
+});
+
+// Language functionality
+let currentLanguage = localStorage.getItem('selectedLanguage') || 'en';
+
+const translations = {
+    en: {
+        'hero-subtitle': 'Scroll through our inspiration and discover how you can bring these designs to life. From elegant wall designs to complete spaces - every photo tells a story of style and comfort. No overpriced items, just affordable products you can shop directly from the inspiration photos.',
+        'cta-button': 'Get Inspired',
+        'section-title': 'Interior Inspiration',
+        'section-subtitle': 'Discover our collection of stylish interior ideas',
+        'nav-inspiration': 'Inspiration',
+        'nav-about': 'About Sofie',
+        'footer-description': 'Your source for stylish interior inspiration and design tips.',
+        'footer-quick-links': 'Quick Links',
+        'footer-contact': 'Contact',
+        'footer-copyright': '© 2024 Sofie\'s Interior Design. All rights reserved.'
+    },
+    nl: {
+        'hero-subtitle': 'Scroll door onze inspiratie en ontdek hoe jij deze designs tot leven kunt brengen. Van elegante muurdesigns tot complete ruimtes - elke foto vertelt een verhaal van stijl en comfort. Geen overdreven prijzen, gewoon betaalbare producten die je direct kunt shoppen uit de inspiratiefoto\'s.',
+        'cta-button': 'Laat Je Inspireren',
+        'section-title': 'Interieur Inspiratie',
+        'section-subtitle': 'Ontdek onze collectie van stijlvolle interieurideeën',
+        'nav-inspiration': 'Inspiratie',
+        'nav-about': 'Over Sofie',
+        'footer-description': 'Jouw bron voor stijlvolle interieurinspiratie en design tips.',
+        'footer-quick-links': 'Quick Links',
+        'footer-contact': 'Contact',
+        'footer-copyright': '© 2024 Sofie\'s Interior Design. Alle rechten voorbehouden.'
+    },
+    de: {
+        'hero-subtitle': 'Durchsuchen Sie unsere Inspiration und entdecken Sie, wie Sie diese Designs zum Leben erwecken können. Von eleganten Wanddesigns bis hin zu kompletten Räumen - jedes Foto erzählt eine Geschichte von Stil und Komfort. Keine überteuerten Artikel, nur erschwingliche Produkte, die Sie direkt aus den Inspirationsfotos kaufen können.',
+        'cta-button': 'Inspirieren lassen',
+        'section-title': 'Innenarchitektur Inspiration',
+        'section-subtitle': 'Entdecken Sie unsere Sammlung stilvoller Innenarchitektur-Ideen',
+        'nav-inspiration': 'Inspiration',
+        'nav-about': 'Über Sofie',
+        'footer-description': 'Ihre Quelle für stilvolle Innenarchitektur-Inspiration und Design-Tipps.',
+        'footer-quick-links': 'Schnelllinks',
+        'footer-contact': 'Kontakt',
+        'footer-copyright': '© 2024 Sofie\'s Interior Design. Alle Rechte vorbehalten.'
+    },
+    fr: {
+        'hero-subtitle': 'Parcourez notre inspiration et découvrez comment vous pouvez donner vie à ces designs. Des designs de murs élégants aux espaces complets - chaque photo raconte une histoire de style et de confort. Pas d\'articles surévalués, juste des produits abordables que vous pouvez acheter directement depuis les photos d\'inspiration.',
+        'cta-button': 'Se laisser inspirer',
+        'section-title': 'Inspiration Intérieure',
+        'section-subtitle': 'Découvrez notre collection d\'idées d\'intérieur élégantes',
+        'nav-inspiration': 'Inspiration',
+        'nav-about': 'À propos de Sofie',
+        'footer-description': 'Votre source d\'inspiration intérieure élégante et de conseils de design.',
+        'footer-quick-links': 'Liens Rapides',
+        'footer-contact': 'Contact',
+        'footer-copyright': '© 2024 Sofie\'s Interior Design. Tous droits réservés.'
+    }
+};
+
+function toggleLanguageMenu() {
+    const menu = document.getElementById('languageMenu');
+    menu.classList.toggle('show');
+}
+
+function changeLanguage(lang) {
+    currentLanguage = lang;
+    
+    // Save selected language to localStorage
+    localStorage.setItem('selectedLanguage', lang);
+    
+    // Update current language indicator
+    document.querySelector('.current-lang').textContent = lang.toUpperCase();
+    
+    // Update all translatable elements
+    const elements = document.querySelectorAll('[data-en]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-en');
+        const translatedText = element.getAttribute(`data-${lang}`);
+        if (translatedText) {
+            element.textContent = translatedText;
+        } else if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+    
+    // Update navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+    if (navLinks[0]) navLinks[0].textContent = translations[lang]['nav-inspiration'];
+    if (navLinks[1]) navLinks[1].textContent = translations[lang]['nav-about'];
+    
+    // Reload inspiration grid with new language
+    if (!isOnProductPage) {
+        loadInspiration();
+    }
+    
+    // Close language menu
+    document.getElementById('languageMenu').classList.remove('show');
+}
+
+// Close language menu when clicking outside
+document.addEventListener('click', (e) => {
+    const languageSelector = document.querySelector('.language-selector');
+    const languageMenu = document.getElementById('languageMenu');
+    
+    if (languageSelector && languageMenu && !languageSelector.contains(e.target)) {
+        languageMenu.classList.remove('show');
     }
 });

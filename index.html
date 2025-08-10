@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sofie's Interior Design Inspiration - Luxe Interieurinspiratie</title>
-    <meta name="description" content="Ontdek stijlvolle interieurinspiratie van Sofie. Van muurdesigns tot complete ruimtes, vind jouw perfecte interieur.">
+    <title>Sofie's Interior Design Inspiration - Luxury Interior Inspiration</title>
+    <meta name="description" content="Discover stylish interior inspiration from Sofie. From wall designs to complete spaces, find your perfect interior.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,8 +25,20 @@
                 <h1>Sofie's Interior Design</h1>
             </div>
             <div class="nav-menu">
-                <a href="#inspiration" class="nav-link">Inspiratie</a>
-                <a href="#about" class="nav-link">Over Sofie</a>
+                <a href="#inspiration" class="nav-link">Inspiration</a>
+                <a href="#about" class="nav-link">About Sofie</a>
+                <div class="language-selector">
+                    <button class="language-btn" onclick="toggleLanguageMenu()">
+                        <i class="fas fa-globe"></i>
+                        <span class="current-lang">EN</span>
+                    </button>
+                    <div class="language-menu" id="languageMenu">
+                        <a href="#" onclick="changeLanguage('en')" class="lang-option active">English</a>
+                        <a href="#" onclick="changeLanguage('nl')" class="lang-option">Nederlands</a>
+                        <a href="#" onclick="changeLanguage('de')" class="lang-option">Deutsch</a>
+                        <a href="#" onclick="changeLanguage('fr')" class="lang-option">Français</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -34,8 +46,8 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <p class="hero-subtitle">Scroll door onze inspiratie en ontdek hoe jij deze designs tot leven kunt brengen. Van elegante muurdesigns tot complete ruimtes - elke foto vertelt een verhaal van stijl en comfort. Geen overdreven prijzen, gewoon betaalbare producten die je direct kunt shoppen uit de inspiratiefoto's.</p>
-            <a href="#inspiration" class="cta-button" onclick="scrollToInspiration()">Laat Je Inspireren</a>
+            <p class="hero-subtitle" data-en="Scroll through our inspiration and discover how you can bring these designs to life. From elegant wall designs to complete spaces - every photo tells a story of style and comfort. No overpriced items, just affordable products you can shop directly from the inspiration photos." data-nl="Scroll door onze inspiratie en ontdek hoe jij deze designs tot leven kunt brengen. Van elegante muurdesigns tot complete ruimtes - elke foto vertelt een verhaal van stijl en comfort. Geen overdreven prijzen, gewoon betaalbare producten die je direct kunt shoppen uit de inspiratiefoto's." data-de="Durchsuchen Sie unsere Inspiration und entdecken Sie, wie Sie diese Designs zum Leben erwecken können. Von eleganten Wanddesigns bis hin zu kompletten Räumen - jedes Foto erzählt eine Geschichte von Stil und Komfort. Keine überteuerten Artikel, nur erschwingliche Produkte, die Sie direkt aus den Inspirationsfotos kaufen können." data-fr="Parcourez notre inspiration et découvrez comment vous pouvez donner vie à ces designs. Des designs de murs élégants aux espaces complets - chaque photo raconte une histoire de style et de confort. Pas d'articles surévalués, juste des produits abordables que vous pouvez acheter directement depuis les photos d'inspiration.">Scroll through our inspiration and discover how you can bring these designs to life. From elegant wall designs to complete spaces - every photo tells a story of style and comfort. No overpriced items, just affordable products you can shop directly from the inspiration photos.</p>
+            <a href="#inspiration" class="cta-button" onclick="scrollToInspiration()" data-en="Get Inspired" data-nl="Laat Je Inspireren" data-de="Inspirieren lassen" data-fr="Se laisser inspirer">Get Inspired</a>
         </div>
         <div class="hero-background">
             <div class="hero-image"></div>
@@ -46,8 +58,8 @@
     <section id="inspiration" class="inspiration-section">
         <div class="container">
             <div class="section-header">
-                <h2>Interieur Inspiratie</h2>
-                <p>Ontdek onze collectie van stijlvolle interieurideeën</p>
+                <h2 data-en="Interior Inspiration" data-nl="Interieur Inspiratie" data-de="Innenarchitektur Inspiration" data-fr="Inspiration Intérieure">Interior Inspiration</h2>
+                <p data-en="Discover our collection of stylish interior ideas" data-nl="Ontdek onze collectie van stijlvolle interieurideeën" data-de="Entdecken Sie unsere Sammlung stilvoller Innenarchitektur-Ideen" data-fr="Découvrez notre collection d'idées d'intérieur élégantes">Discover our collection of stylish interior ideas</p>
             </div>
 
             <div id="inspirationGrid" class="inspiration-grid">
@@ -62,17 +74,17 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Sofie's Interior Design</h3>
-                    <p>Jouw bron voor stijlvolle interieurinspiratie en design tips.</p>
+                    <p data-en="Your source for stylish interior inspiration and design tips." data-nl="Jouw bron voor stijlvolle interieurinspiratie en design tips." data-de="Ihre Quelle für stilvolle Innenarchitektur-Inspiration und Design-Tipps." data-fr="Votre source d'inspiration intérieure élégante et de conseils de design.">Your source for stylish interior inspiration and design tips.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-en="Quick Links" data-nl="Quick Links" data-de="Schnelllinks" data-fr="Liens Rapides">Quick Links</h4>
                     <ul>
-                        <li><a href="#inspiration">Inspiratie</a></li>
-                        <li><a href="#about">Over Sofie</a></li>
+                        <li><a href="#inspiration" data-en="Inspiration" data-nl="Inspiratie" data-de="Inspiration" data-fr="Inspiration">Inspiration</a></li>
+                        <li><a href="#about" data-en="About Sofie" data-nl="Over Sofie" data-de="Über Sofie" data-fr="À propos de Sofie">About Sofie</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
+                    <h4 data-en="Contact" data-nl="Contact" data-de="Kontakt" data-fr="Contact">Contact</h4>
                     <p>info@sofiesinterior.nl</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -82,7 +94,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sofie's Interior Design. Alle rechten voorbehouden.</p>
+                <p data-en="&copy; 2024 Sofie's Interior Design. All rights reserved." data-nl="&copy; 2024 Sofie's Interior Design. Alle rechten voorbehouden." data-de="&copy; 2024 Sofie's Interior Design. Alle Rechte vorbehalten." data-fr="&copy; 2024 Sofie's Interior Design. Tous droits réservés.">&copy; 2024 Sofie's Interior Design. All rights reserved.</p>
             </div>
         </div>
     </footer>
