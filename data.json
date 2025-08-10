@@ -1,0 +1,53 @@
+{
+  "inspirations": [
+    {
+      "id": "MW-101",
+      "title": "Luxe Woonkamer met Spiegeldecor",
+      "description": "Stijlvolle woonkamer met elegante spiegeldecoratie en moderne inrichting",
+      "category": "interior",
+      "image": "images/20250802_1815_Luxe Woonkamer Spiegeldecor_remix_01k1nryj44f02vwsztya666hda (1).png",
+      "products": [
+        {
+          "name": "Lijstloze wandspiegel Lia in organische vorm",
+          "price": "€249",
+          "shop": "Westwing",
+          "link": "https://www.westwing.nl/lijstloze-wandspiegel-lia-in-organische-vorm-149603.html"
+        }
+      ],
+      "tips": "Voor een luxe woonkamer, combineer grote spiegels met warme verlichting. Kies voor hoogwaardige materialen zoals leder en marmer. Zorg voor een goede balans tussen functionaliteit en stijl."
+    },
+    {
+      "id": "MW-102",
+      "title": "Stijlvolle Woonkamer met Kunstwerk",
+      "description": "Moderne woonkamer met handbeschilderd canvas kunstwerk en elegante inrichting",
+      "category": "interior",
+      "image": "images/20250804_1338_Stijlvolle Woonkamerreclame_remix_01k1tdx1rsfgea7qqy9s5szysd.png",
+      "products": [
+        {
+          "name": "Handbeschilderde canvas Abstract Seven",
+          "price": "€289",
+          "shop": "Westwing",
+          "link": "https://www.westwing.nl/handbeschilderde-canvas-abstract-seven-159047.html"
+        }
+      ],
+      "tips": "Voor een stijlvolle woonkamer, kies voor handbeschilderde kunstwerken die de ruimte karakter geven. Combineer abstracte kunst met neutrale meubels voor een moderne uitstraling."
+    }
+  ],
+  "categories": [
+    {
+      "id": "interior",
+      "name": "Interieur",
+      "description": "Luxe interieur design en accessoires"
+    }
+  ],
+  "settings": {
+    "siteName": "Sofie's Interior Design",
+    "siteDescription": "Jouw bron voor stijlvolle interieurinspiratie en design tips",
+    "contactEmail": "info@sofiesinterior.nl",
+    "socialMedia": {
+      "instagram": "https://instagram.com/sofiesinterior",
+      "pinterest": "https://pinterest.com/sofiesinterior",
+      "tiktok": "https://tiktok.com/@sofiesinterior"
+    }
+  }
+} 
