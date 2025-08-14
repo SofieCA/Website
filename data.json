@@ -79,19 +79,31 @@
         },
         {
             "id": "MW-103",
-            "title": "Luxurious Glassware Display",
-            "image": "images/20250810_2234_Luxurious Glassware Display_remix_01k2atyerpf3jv6w12ax8s6dcq.png",
-            "description": "Een luxueuze display van handgemaakte glazen voor een verfijnde tafelsetting.",
+            "title": "Kleurrijke Vaas Collectie",
+            "image": "images/20250812_1424_Chique Bloemenvazen Display_remix_01k2f3pw0ze51sfbn3eat46rjs.png",
+            "description": "Een prachtige collectie kleurrijke vazen in verschillende vormen en maten, perfect voor het toevoegen van levendige accenten aan elke ruimte.",
             "products": [
                 {
-                    "name": "Zafferano Transparante Glazen",
-                    "link": "https://www.amazon.nl/Zafferano-Transparant-handgemaakt-versierd-verschillende/dp/B089F3Y538"
+                    "name": "Blauwe Vaas",
+                    "link": "https://amzn.to/4m6G6RK"
+                },
+                {
+                    "name": "Groene Vaas",
+                    "link": "https://amzn.to/4oxBzt6"
+                },
+                {
+                    "name": "Bruine Vaas",
+                    "link": "https://amzn.to/414Y9zs"
+                },
+                {
+                    "name": "Kristallen Vaas",
+                    "link": "https://amzn.to/45eVS7i"
                 }
             ],
             "tips": [
-                "Gebruik de glazen voor speciale gelegenheden en diners",
-                "Combineer met subtiele verlichting voor een elegante uitstraling",
-                "Zorg voor voldoende ruimte tussen de glazen voor een gebalanceerde look"
+                "Rangschik de vazen in een groep voor maximaal visueel effect",
+                "Meng verschillende hoogtes en vormen voor een interessante compositie",
+                "Gebruik seizoensbloemen om de vaaskleuren te complementeren"
             ]
         },
         {
@@ -175,6 +187,23 @@
                 "Gebruik het Hermès boek als decoratief element voor hoogte en stijl",
                 "Combineer de sieradenschaal met de vazen voor een gebalanceerde look",
                 "Het abstracte schilderij voegt kleur en dynamiek toe aan de compositie"
+            ]
+        },
+        {
+            "id": "MW-107",
+            "title": "Kleurrijke Glas Collectie",
+            "image": "images/20250814_1911_Kan met Water_remix_01k2mrx8ztemvtxrrfed5ndz61.png",
+            "description": "Een prachtige collectie handgemaakte kleurrijke glazen, perfect voor het toevoegen van levendige accenten aan elke tafelsetting.",
+            "products": [
+                {
+                    "name": "Zafferano Kleurrijke Glazen Set",
+                    "link": "https://amzn.to/4mgPn9S"
+                }
+            ],
+            "tips": [
+                "Gebruik deze glazen voor speciale gelegenheden en elegante diners",
+                "Combineer met subtiele verlichting voor een elegante sfeer",
+                "Zorg voor voldoende ruimte tussen de glazen voor een gebalanceerde look"
             ]
         }
     ]

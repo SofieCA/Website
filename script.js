@@ -119,20 +119,79 @@ const inspirationData = [
     },
     {
         id: "MW-103",
-        title: "Luxurious Glassware Display",
-        image: "images/20250810_2234_Luxurious Glassware Display_remix_01k2atyerpf3jv6w12ax8s6dcq.png",
-        description: "Een luxueuze display van handgemaakte glazen voor een verfijnde tafelsetting.",
+        title: {
+            en: "Colorful Vase Collection",
+            nl: "Kleurrijke Vaas Collectie",
+            de: "Farbige Vasen Kollektion",
+            fr: "Collection de Vases Colorés"
+        },
+        image: "images/20250812_1424_Chique Bloemenvazen Display_remix_01k2f3pw0ze51sfbn3eat46rjs.png",
+        description: {
+            en: "A beautiful collection of colorful vases in different shapes and sizes, perfect for adding vibrant accents to any room.",
+            nl: "Een prachtige collectie kleurrijke vazen in verschillende vormen en maten, perfect voor het toevoegen van levendige accenten aan elke ruimte.",
+            de: "Eine wunderschöne Kollektion farbiger Vasen in verschiedenen Formen und Größen, perfekt zum Hinzufügen lebendiger Akzente in jedem Raum.",
+            fr: "Une belle collection de vases colorés dans différentes formes et tailles, parfaite pour ajouter des accents vibrants à n'importe quelle pièce."
+        },
         products: [
             {
-                name: "Zafferano Transparante Glazen",
-                link: "https://amzn.to/41me38P"
+                name: {
+                    en: "Blue Vase",
+                    nl: "Blauwe Vaas",
+                    de: "Blaue Vase",
+                    fr: "Vase Bleu"
+                },
+                link: "https://amzn.to/4m6G6RK"
+            },
+            {
+                name: {
+                    en: "Green Vase",
+                    nl: "Groene Vaas",
+                    de: "Grüne Vase",
+                    fr: "Vase Vert"
+                },
+                link: "https://amzn.to/4oxBzt6"
+            },
+            {
+                name: {
+                    en: "Brown Vase",
+                    nl: "Bruine Vaas",
+                    de: "Braune Vase",
+                    fr: "Vase Marron"
+                },
+                link: "https://amzn.to/414Y9zs"
+            },
+            {
+                name: {
+                    en: "Crystal Vase",
+                    nl: "Kristallen Vaas",
+                    de: "Kristallvase",
+                    fr: "Vase en Cristal"
+                },
+                link: "https://amzn.to/45eVS7i"
             }
         ],
-        tips: [
-            "Gebruik de glazen voor speciale gelegenheden en diners",
-            "Combineer met subtiele verlichting voor een elegante uitstraling",
-            "Zorg voor voldoende ruimte tussen de glazen voor een gebalanceerde look"
-        ]
+        tips: {
+            en: [
+                "Arrange the vases in a group for maximum visual impact",
+                "Mix different heights and shapes for an interesting composition",
+                "Use seasonal flowers to complement the vase colors"
+            ],
+            nl: [
+                "Rangschik de vazen in een groep voor maximaal visueel effect",
+                "Meng verschillende hoogtes en vormen voor een interessante compositie",
+                "Gebruik seizoensbloemen om de vaaskleuren te complementeren"
+            ],
+            de: [
+                "Arrangieren Sie die Vasen in einer Gruppe für maximale visuelle Wirkung",
+                "Mischen Sie verschiedene Höhen und Formen für eine interessante Komposition",
+                "Verwenden Sie saisonale Blumen, um die Vasenfarben zu ergänzen"
+            ],
+            fr: [
+                "Disposez les vases en groupe pour un impact visuel maximal",
+                "Mélangez différentes hauteurs et formes pour une composition intéressante",
+                "Utilisez des fleurs saisonnières pour compléter les couleurs des vases"
+            ]
+        }
     },
     {
         id: "MW-104",
@@ -216,6 +275,55 @@ const inspirationData = [
             "Combineer de sieradenschaal met de vazen voor een gebalanceerde look",
             "Het abstracte schilderij voegt kleur en dynamiek toe aan de compositie"
         ]
+    },
+    {
+        id: "MW-107",
+        title: {
+            en: "Colorful Glass Collection",
+            nl: "Kleurrijke Glas Collectie",
+            de: "Farbige Glas Kollektion",
+            fr: "Collection de Verres Colorés"
+        },
+        image: "images/20250814_1911_Kan met Water_remix_01k2mrx8ztemvtxrrfed5ndz61.png",
+        description: {
+            en: "A beautiful collection of handcrafted colorful glasses, perfect for adding vibrant accents to any table setting.",
+            nl: "Een prachtige collectie handgemaakte kleurrijke glazen, perfect voor het toevoegen van levendige accenten aan elke tafelsetting.",
+            de: "Eine wunderschöne Kollektion handgefertigter farbiger Gläser, perfekt zum Hinzufügen lebendiger Akzente in jedem Tischsetting.",
+            fr: "Une belle collection de verres colorés artisanaux, parfaite pour ajouter des accents vibrants à n'importe quel dressage de table."
+        },
+        products: [
+            {
+                name: {
+                    en: "Zafferano Colorful Glasses Set",
+                    nl: "Zafferano Kleurrijke Glazen Set",
+                    de: "Zafferano Farbige Gläser Set",
+                    fr: "Set de Verres Colorés Zafferano"
+                },
+                link: "https://amzn.to/4mgPn9S"
+            }
+        ],
+        tips: {
+            en: [
+                "Use these glasses for special occasions and elegant dinners",
+                "Combine with subtle lighting for an elegant atmosphere",
+                "Ensure sufficient space between glasses for a balanced look"
+            ],
+            nl: [
+                "Gebruik deze glazen voor speciale gelegenheden en elegante diners",
+                "Combineer met subtiele verlichting voor een elegante sfeer",
+                "Zorg voor voldoende ruimte tussen de glazen voor een gebalanceerde look"
+            ],
+            de: [
+                "Verwenden Sie diese Gläser für besondere Anlässe und elegante Diners",
+                "Kombinieren Sie mit subtiler Beleuchtung für eine elegante Atmosphäre",
+                "Stellen Sie ausreichend Platz zwischen den Gläsern für einen ausgewogenen Look sicher"
+            ],
+            fr: [
+                "Utilisez ces verres pour des occasions spéciales et des dîners élégants",
+                "Combinez avec un éclairage subtil pour une atmosphère élégante",
+                "Assurez-vous d'avoir suffisamment d'espace entre les verres pour un look équilibré"
+            ]
+        }
     }
 ];
 
