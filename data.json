@@ -205,6 +205,68 @@
                 "Combineer met subtiele verlichting voor een elegante sfeer",
                 "Zorg voor voldoende ruimte tussen de glazen voor een gebalanceerde look"
             ]
+        },
+        {
+            "id": "MW-108",
+            "title": "Elegante Tafelindeling",
+            "image": "images/Scherm­afbeelding 2025-08-14 om 21.40.12.png",
+            "description": "Een verfijnde tafelindeling met wijnglazen, elegante borden, placemats, bestek en een prachtige vaas voor speciale gelegenheden.",
+            "products": [
+                {
+                    "name": "Wijnglazen",
+                    "link": "https://amzn.to/45Mkswp"
+                },
+                {
+                    "name": "Elegante Borden",
+                    "link": "https://amzn.to/4fB1TPf"
+                },
+                {
+                    "name": "Placemat",
+                    "link": "https://amzn.to/4lyQTTR"
+                },
+                {
+                    "name": "Bestekset",
+                    "link": "https://amzn.to/4fEEMmH"
+                },
+                {
+                    "name": "Decoratieve Vaas",
+                    "link": "https://amzn.to/45vI5be"
+                }
+            ],
+            "tips": [
+                "Rangschik de wijnglazen in een diagonale lijn voor een elegante look",
+                "Gebruik placemats om je tafel te beschermen en textuur toe te voegen",
+                "Coördineer de vaas met de kleuren van je tafelindeling"
+            ]
+        },
+        {
+            "id": "MW-109",
+            "title": "Stijlvolle Mini Bar",
+            "image": "images/20250814_2231_Thuisbar met Drankflessen_remix_01k2n4carhe1gaj5fhj5ajmx66.png",
+            "description": "Een verfijnde mini bar opstelling met opbergkast, planken, sfeerverlichting en cocktail mixer set voor het entertainen van gasten.",
+            "products": [
+                {
+                    "name": "Opbergkast",
+                    "link": "https://amzn.to/3UZt1h4"
+                },
+                {
+                    "name": "Planken",
+                    "link": "https://amzn.to/45EDIL3"
+                },
+                {
+                    "name": "Sfeerverlichting",
+                    "link": "https://amzn.to/4mb1lBW"
+                },
+                {
+                    "name": "Cocktail Mixer Set",
+                    "link": "https://amzn.to/3JeE8Al"
+                }
+            ],
+            "tips": [
+                "Gebruik de kast om flessen en glazen netjes op te bergen",
+                "Installeer sfeerverlichting om een gezellige sfeer te creëren",
+                "Houd de cocktail mixer set gemakkelijk toegankelijk voor gasten"
+            ]
         }
     ]
 } 

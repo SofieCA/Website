@@ -87,16 +87,8 @@ const inspirationData = [
                 link: "https://amzn.to/4lrouPx"
             },
             {
-                name: "Abstract Schilderij 1",
+                name: "Schilderijen",
                 link: "https://www.europosters.nl/art-photo/colour-study-i-abstract-rainbow-karl-wiener-v124266?affil=SOFIESINTERIORDESIGN10"
-            },
-            {
-                name: "Abstract Schilderij 2",
-                link: "https://www.europosters.nl/art-photo/colour-study-iii-abstract-rainbow-karl-wiener-v124269?affil=SOFIESINTERIORDESIGN10"
-            },
-            {
-                name: "Abstract Schilderij 3",
-                link: "https://www.europosters.nl/art-photo/colour-study-v-abstract-rainbow-karl-wiener-v124268?affil=SOFIESINTERIORDESIGN10"
             },
             {
                 name: "Elegante Hoekbank",
@@ -135,39 +127,12 @@ const inspirationData = [
         products: [
             {
                 name: {
-                    en: "Blue Vase",
-                    nl: "Blauwe Vaas",
-                    de: "Blaue Vase",
-                    fr: "Vase Bleu"
+                    en: "Vazen",
+                    nl: "Vazen",
+                    de: "Vazen",
+                    fr: "Vazen"
                 },
                 link: "https://amzn.to/4m6G6RK"
-            },
-            {
-                name: {
-                    en: "Green Vase",
-                    nl: "Groene Vaas",
-                    de: "Grüne Vase",
-                    fr: "Vase Vert"
-                },
-                link: "https://amzn.to/4oxBzt6"
-            },
-            {
-                name: {
-                    en: "Brown Vase",
-                    nl: "Bruine Vaas",
-                    de: "Braune Vase",
-                    fr: "Vase Marron"
-                },
-                link: "https://amzn.to/414Y9zs"
-            },
-            {
-                name: {
-                    en: "Crystal Vase",
-                    nl: "Kristallen Vaas",
-                    de: "Kristallvase",
-                    fr: "Vase en Cristal"
-                },
-                link: "https://amzn.to/45eVS7i"
             }
         ],
         tips: {
@@ -254,19 +219,19 @@ const inspirationData = [
         description: "Een elegante display van gestileerde vazen met decoratieve accessoires voor een verfijnde woonkamer.",
         products: [
             {
-                name: "Little Book of Hermès",
+                name: "Boek",
                 link: "https://amzn.to/45Jmttd"
             },
             {
-                name: "ARJDXDP Sieradenschaal",
+                name: "Schaaltje",
                 link: "https://amzn.to/4oqyL17"
             },
             {
-                name: "Keramische Kleine Bloemenvazen",
+                name: "Vazen",
                 link: "https://amzn.to/4ouSbBO"
             },
             {
-                name: "Abstract Art Seize the Day",
+                name: "Schilderij",
                 link: "https://www.europosters.nl/marketplace/abstract-art-seize-the-day-v156011?affil=SOFIESINTERIORDESIGN10"
             }
         ],
@@ -322,6 +287,167 @@ const inspirationData = [
                 "Utilisez ces verres pour des occasions spéciales et des dîners élégants",
                 "Combinez avec un éclairage subtil pour une atmosphère élégante",
                 "Assurez-vous d'avoir suffisamment d'espace entre les verres pour un look équilibré"
+            ]
+        }
+    },
+    {
+        id: "MW-108",
+        title: {
+            en: "Elegant Table Setting",
+            nl: "Elegante Tafelindeling",
+            de: "Elegantes Tischsetting",
+            fr: "Dressage de Table Élégant"
+        },
+        image: "images/Scherm­afbeelding 2025-08-14 om 21.40.12.png",
+        description: {
+            en: "A sophisticated table setting with wine glasses, elegant plates, placemats, cutlery and a beautiful vase for special occasions.",
+            nl: "Een verfijnde tafelindeling met wijnglazen, elegante borden, placemats, bestek en een prachtige vaas voor speciale gelegenheden.",
+            de: "Eine raffinierte Tischdekoration mit Weingläsern, eleganten Tellern, Platzsets, Besteck und einer wunderschönen Vase für besondere Anlässe.",
+            fr: "Un dressage de table sophistiqué avec des verres à vin, des assiettes élégantes, des sets de table, des couverts et un beau vase pour des occasions spéciales."
+        },
+        products: [
+            {
+                name: {
+                    en: "Glazen",
+                    nl: "Glazen",
+                    de: "Glazen",
+                    fr: "Glazen"
+                },
+                link: "https://amzn.to/45Mkswp"
+            },
+            {
+                name: {
+                    en: "Borden",
+                    nl: "Borden",
+                    de: "Borden",
+                    fr: "Borden"
+                },
+                link: "https://amzn.to/4fB1TPf"
+            },
+            {
+                name: {
+                    en: "Placemat",
+                    nl: "Placemat",
+                    de: "Placemat",
+                    fr: "Placemat"
+                },
+                link: "https://amzn.to/4lyQTTR"
+            },
+            {
+                name: {
+                    en: "Bestek",
+                    nl: "Bestek",
+                    de: "Bestek",
+                    fr: "Bestek"
+                },
+                link: "https://amzn.to/4fEEMmH"
+            },
+            {
+                name: {
+                    en: "Vaas",
+                    nl: "Vaas",
+                    de: "Vaas",
+                    fr: "Vaas"
+                },
+                link: "https://amzn.to/45vI5be"
+            }
+        ],
+        tips: {
+            en: [
+                "Arrange the wine glasses in a diagonal line for an elegant look",
+                "Use placemats to protect your table and add texture",
+                "Coordinate the vase with your table setting colors"
+            ],
+            nl: [
+                "Rangschik de wijnglazen in een diagonale lijn voor een elegante look",
+                "Gebruik placemats om je tafel te beschermen en textuur toe te voegen",
+                "Coördineer de vaas met de kleuren van je tafelindeling"
+            ],
+            de: [
+                "Arrangieren Sie die Weingläser in einer diagonalen Linie für einen eleganten Look",
+                "Verwenden Sie Platzsets, um Ihren Tisch zu schützen und Textur hinzuzufügen",
+                "Koordinieren Sie die Vase mit den Farben Ihres Tischsettings"
+            ],
+            fr: [
+                "Disposez les verres à vin en ligne diagonale pour un look élégant",
+                "Utilisez des sets de table pour protéger votre table et ajouter de la texture",
+                "Coordonnez le vase avec les couleurs de votre dressage de table"
+            ]
+        }
+    },
+    {
+        id: "MW-109",
+        title: {
+            en: "Stylish Mini Bar",
+            nl: "Stijlvolle Mini Bar",
+            de: "Stylischer Mini Bar",
+            fr: "Mini Bar Élégant"
+        },
+        image: "images/20250814_2231_Thuisbar met Drankflessen_remix_01k2n4carhe1gaj5fhj5ajmx66.png",
+        description: {
+            en: "A sophisticated mini bar setup with storage cabinet, shelves, ambient lighting and cocktail mixer set for entertaining guests.",
+            nl: "Een verfijnde mini bar opstelling met opbergkast, planken, sfeerverlichting en cocktail mixer set voor het entertainen van gasten.",
+            de: "Eine raffinierte Mini-Bar-Einrichtung mit Aufbewahrungsschrank, Regalen, Ambient-Beleuchtung und Cocktail-Mixer-Set für die Unterhaltung von Gästen.",
+            fr: "Une installation de mini bar sophistiquée avec armoire de rangement, étagères, éclairage d'ambiance et set de mixeur à cocktails pour divertir les invités."
+        },
+        products: [
+            {
+                name: {
+                    en: "Kast",
+                    nl: "Kast",
+                    de: "Kast",
+                    fr: "Kast"
+                },
+                link: "https://amzn.to/3UZt1h4"
+            },
+            {
+                name: {
+                    en: "Plank",
+                    nl: "Plank",
+                    de: "Plank",
+                    fr: "Plank"
+                },
+                link: "https://amzn.to/45EDIL3"
+            },
+            {
+                name: {
+                    en: "Cocktailmixer",
+                    nl: "Cocktailmixer",
+                    de: "Cocktailmixer",
+                    fr: "Cocktailmixer"
+                },
+                link: "https://amzn.to/3JeE8Al"
+            },
+            {
+                name: {
+                    en: "Licht",
+                    nl: "Licht",
+                    de: "Licht",
+                    fr: "Licht"
+                },
+                link: "https://amzn.to/4mb1lBW"
+            }
+        ],
+        tips: {
+            en: [
+                "Use the cabinet to store bottles and glassware neatly",
+                "Install ambient lighting to create a cozy atmosphere",
+                "Keep the cocktail mixer set easily accessible for guests"
+            ],
+            nl: [
+                "Gebruik de kast om flessen en glazen netjes op te bergen",
+                "Installeer sfeerverlichting om een gezellige sfeer te creëren",
+                "Houd de cocktail mixer set gemakkelijk toegankelijk voor gasten"
+            ],
+            de: [
+                "Verwenden Sie den Schrank, um Flaschen und Gläser ordentlich zu verstauen",
+                "Installieren Sie Ambient-Beleuchtung, um eine gemütliche Atmosphäre zu schaffen",
+                "Halten Sie das Cocktail-Mixer-Set für Gäste leicht zugänglich"
+            ],
+            fr: [
+                "Utilisez l'armoire pour ranger les bouteilles et la verrerie proprement",
+                "Installez un éclairage d'ambiance pour créer une atmosphère chaleureuse",
+                "Gardez le set de mixeur à cocktails facilement accessible pour les invités"
             ]
         }
     }
@@ -390,6 +516,10 @@ function createInspirationItem(item) {
                 vase: 'VASE',
                 cutlery: 'CUTLERY',
                 plates: 'PLATES',
+                cabinet: 'CABINET',
+                shelves: 'SHELVES',
+                mixer: 'MIXER',
+                placemat: 'PLACEMAT',
                 product: 'PRODUCT'
             },
             nl: {
@@ -406,6 +536,10 @@ function createInspirationItem(item) {
                 vase: 'VAAS',
                 cutlery: 'BESTEK',
                 plates: 'BORDEN',
+                cabinet: 'KAST',
+                shelves: 'PLANK',
+                mixer: 'COCKTAILMIXER',
+                placemat: 'PLACEMAT',
                 product: 'PRODUCT'
             },
             de: {
@@ -422,6 +556,10 @@ function createInspirationItem(item) {
                 vase: 'VASE',
                 cutlery: 'BESTECK',
                 plates: 'TELLER',
+                cabinet: 'SCHRANK',
+                shelves: 'REGAL',
+                mixer: 'MIXER',
+                placemat: 'PLATZSET',
                 product: 'PRODUKT'
             },
             fr: {
@@ -438,24 +576,32 @@ function createInspirationItem(item) {
                 vase: 'VASE',
                 cutlery: 'COUTELLERIE',
                 plates: 'ASSIETTES',
+                cabinet: 'ARMОIRE',
+                shelves: 'ÉTAGÈRES',
+                mixer: 'MIXEUR',
+                placemat: 'SET DE TABLE',
                 product: 'PRODUIT'
             }
         };
         
         let productType = 'product';
         if (nameLower.includes('bank') || nameLower.includes('hoekbank') || nameLower.includes('sofa') || nameLower.includes('couch') || nameLower.includes('canapé')) productType = 'sofa';
-        else if (nameLower.includes('schilderij') || nameLower.includes('painting') || nameLower.includes('gemälde') || nameLower.includes('peinture')) productType = 'painting';
+        else if (nameLower.includes('schilderij') || nameLower.includes('schilderijen') || nameLower.includes('painting') || nameLower.includes('gemälde') || nameLower.includes('peinture')) productType = 'painting';
         else if (nameLower.includes('salontafel') || nameLower.includes('coffee table') || nameLower.includes('couchtisch') || nameLower.includes('table basse')) productType = 'table';
         else if (nameLower.includes('kussensloop') || nameLower.includes('cushion') || nameLower.includes('kissenbezug') || nameLower.includes('housse')) productType = 'cushion';
-        else if (nameLower.includes('verlichting') || nameLower.includes('kunstverlichting') || nameLower.includes('lighting') || nameLower.includes('lamp')) productType = 'lighting';
+        else if (nameLower.includes('verlichting') || nameLower.includes('kunstverlichting') || nameLower.includes('licht') || nameLower.includes('lighting') || nameLower.includes('lamp')) productType = 'lighting';
         else if (nameLower.includes('behang') || nameLower.includes('wallpaper')) productType = 'wallpaper';
         else if (nameLower.includes('glazen') || nameLower.includes('zafferano') || nameLower.includes('kristalglas') || nameLower.includes('glassware')) productType = 'glassware';
-        else if (nameLower.includes('boeken') || nameLower.includes('decoratieve') || nameLower.includes('hermès') || nameLower.includes('books')) productType = 'books';
+        else if (nameLower.includes('boek') || nameLower.includes('boeken') || nameLower.includes('decoratieve') || nameLower.includes('hermès') || nameLower.includes('books')) productType = 'books';
         else if (nameLower.includes('schaaltje') || nameLower.includes('sieradenschaal') || nameLower.includes('arjdxdp') || nameLower.includes('tray')) productType = 'tray';
         else if (nameLower.includes('spiegel') || nameLower.includes('asymmetrische') || nameLower.includes('mirror')) productType = 'mirror';
-        else if (nameLower.includes('vaas') || nameLower.includes('keramische') || nameLower.includes('bloemenvazen') || nameLower.includes('vase')) productType = 'vase';
+        else if (nameLower.includes('vaas') || nameLower.includes('vazen') || nameLower.includes('keramische') || nameLower.includes('bloemenvazen') || nameLower.includes('vase')) productType = 'vase';
         else if (nameLower.includes('bestek') || nameLower.includes('felicity') || nameLower.includes('cutlery')) productType = 'cutlery';
         else if (nameLower.includes('borden') || nameLower.includes('stijlvolle') || nameLower.includes('plates')) productType = 'plates';
+        else if (nameLower.includes('kast') || nameLower.includes('cabinet')) productType = 'cabinet';
+        else if (nameLower.includes('plank') || nameLower.includes('shelves')) productType = 'shelves';
+        else if (nameLower.includes('cocktailmixer') || nameLower.includes('mixer')) productType = 'mixer';
+        else if (nameLower.includes('placemat')) productType = 'placemat';
         
         return hoverLabels[currentLanguage] ? hoverLabels[currentLanguage][productType] : hoverLabels.en[productType];
     });
